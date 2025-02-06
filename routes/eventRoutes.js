@@ -10,8 +10,8 @@ const authenticate = require("../middlewares/auth");
 const router = express.Router();
 
 router.post("/initialize", authenticate, initializeEvent);
-router.post("/book", authenticate, bookTicket);
+router.post("/book", bookTicket);
 router.post("/cancel", authenticate, cancelBooking);
-router.get("/status/:eventId", authenticate, getEventStatus);
+router.get("/status/:eventId", getEventStatus);
 
 module.exports = router;

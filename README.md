@@ -33,3 +33,13 @@ git clone https://github.com/elishaakande/event-booking-api.git
 cd event-booking-api
 npm install
 ```
+
+### Environment Variables
+
+Create a .env file in the root directory and add:
+
+\`\`\`
+DB_URL=mongodb+srv://[username:password@]host
+DB=YOUR_DB_NAME
+API_KEY=your_secure_api_key
+\`\`\`

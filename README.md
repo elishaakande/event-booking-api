@@ -1,4 +1,4 @@
-# 🎟️ **Event Ticket Booking System API**
+# **Event Ticket Booking System API**
 
 Welcome to the **Event Ticket Booking System API**! This RESTful API enables event organizers to manage ticket bookings, cancellations, waiting lists, and more.
 
@@ -15,7 +15,7 @@ Welcome to the **Event Ticket Booking System API**! This RESTful API enables eve
 
 ---
 
-## 🛠️ **Setup and Running Instructions**
+## **Setup and Running Instructions**
 
 ### Prerequisites
 
@@ -52,7 +52,7 @@ To start the server:
 npm start
 ```
 
-## 🌐 API Documentation
+## API Documentation
 
 ### Authentication
 
@@ -66,14 +66,14 @@ x-api-key: your_secure_api_key
 
 | **Method** | **Endpoint**                  | **Description**                                                       | **Auth Required** |
 | ---------- | ----------------------------- | --------------------------------------------------------------------- | ----------------- |
-| **POST**   | `/api/events/initialize`      | Initialize an event with a set number of tickets.                     | ✅                |
-| **POST**   | `/api/events/book`            | Book a ticket for a user, or add to waiting list.                     | ❌                |
-| **POST**   | `/api/events/cancel`          | Cancel a booking and assign a waiting list user (if available).       | ✅                |
-| **GET**    | `/api/events/status/:eventId` | Get the current status of an event (tickets available, waiting list). | ❌                |
+| **POST**   | `/api/events/initialize`      | Initialize an event with a set number of tickets.                     | `Yes`             |
+| **POST**   | `/api/events/book`            | Book a ticket for a user, or add to waiting list.                     | `No`              |
+| **POST**   | `/api/events/cancel`          | Cancel a booking and assign a waiting list user (if available).       | `Yes`             |
+| **GET**    | `/api/events/status/:eventId` | Get the current status of an event (tickets available, waiting list). | `No`              |
 
----
+## You can also use `https://event-booking-api-elisha.onrender.com` to test tha API
 
-## 🔧 Rate Limiting
+## Rate Limiting
 
 To prevent the abuse of the API, I have implemented rate limiting:
 
@@ -103,3 +103,9 @@ To prevent the abuse of the API, I have implemented rate limiting:
   "timestamp": "2025-02-06T00:00:00Z"
 }
 ```
+
+## Testing API Remotely
+
+- Use `https://event-booking-api-elisha.onrender.com` as the host name
+- Use any of the API endpoint from above
+- Don't forget to use `x-api-key: your_secure_api_key` in your request header

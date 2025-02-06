@@ -29,7 +29,7 @@ Ensure that you have the following installed on your system:
 Clone the repository and install dependencies:
 
 ```bash
-git clone https://github.com/your-repo/event-booking-api.git
+git clone https://github.com/elishaakande/event-booking-api.git
 cd event-booking-api
 npm install
 ```

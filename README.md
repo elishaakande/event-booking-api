@@ -38,8 +38,8 @@ npm install
 
 Create a .env file in the root directory and add:
 
-\`\`\`
+```bash
 DB_URL=mongodb+srv://[username:password@]host
 DB=YOUR_DB_NAME
 API_KEY=your_secure_api_key
-\`\`\`
+```

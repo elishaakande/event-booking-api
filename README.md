@@ -4,7 +4,7 @@ Welcome to the **Event Ticket Booking System API**! This RESTful API enables eve
 
 ---
 
-## 🚀 **Features**
+## **Features**
 
 - **Initialize events** with a set number of tickets.
 - **Book tickets concurrently** and manage waiting lists.
